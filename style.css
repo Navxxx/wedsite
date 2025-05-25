@@ -1,0 +1,206 @@
+
+/* FONT */
+@font-face {
+    font-family: 'Junaretta Martalle';
+    src: url('Junaretta-Martalle.ttf') format('truetype');
+    /* format peut être woff, ttf, otf selon le fichier */
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'PingFangSC-Thin-ttf';
+/*    src: url('./PingFangSC-Thin.ttf') format('truetype');*/
+    src: url('./PingFangSC-Thin.ttf') format('truetype');
+
+}
+
+/* Style général */
+body {
+    font-family: 'PingFangSC-Thin', 'Georgia', 'Times New Roman', sans-serif;
+    line-height: 1.2;
+    margin: 0;
+    padding: 0;
+/*    background-color: #f9f9f9;*/
+    color: #376472;
+    text-align: center;
+    max-width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+.rep {
+    width: 100%;
+}
+
+footer {
+    padding:20px;
+}
+
+a  {
+    color: #C89767;
+/*    margin: 0 10px;*/
+    text-decoration: none;
+}
+
+main {
+
+}
+
+.gradient-text {
+    background: linear-gradient(270deg, #C89767, #376472, #376472, #C89767);
+    background-size: 800% 800%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text; /* Standard */
+    color: transparent;
+    animation: gradientAnim 10s ease infinite;
+}
+
+/* Animation du gradient */
+@keyframes gradientAnim {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+
+
+
+h1 {
+        font-family: 'Junaretta Martalle', 'Georgia', 'Times New Roman', sans-serif;
+        font-size: 4em;
+} 
+
+h2 {
+        font-size: 1.3em;
+        margin: auto;
+        display: inline-block;
+} 
+
+section#faq h1 {
+        font-size: 2em;
+        margin: auto;
+        display: inline-block;
+        margin-top: 50px;
+} 
+
+.line {
+    background-image: url('ligne.svg');
+    background-position: center;  /* centre l'image */
+    background-repeat: no-repeat; /* pas de répétition */
+}
+
+.croix {
+    background-image: url('croix.svg');
+    background-position: center;  /* centre l'image */
+    background-repeat: no-repeat; /* pas de répétition */
+}
+
+section#welcome img {
+        display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+     max-width: 560px;
+
+
+}
+
+section#welcome p {
+    font-size: 2em;
+}
+
+
+.container {
+    display: flex;
+    align-items: stretch; /* étire les divs pour que les extrémités aient la même hauteur que la div centrale */
+    width: 60%;
+    margin: auto;   
+}
+.container2 {
+    display: flex;
+    align-items: stretch; /* étire les divs pour que les extrémités aient la même hauteur que la div centrale */
+    width: 60%;
+    margin: auto;   
+}
+
+
+.metacontainer {
+        margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.line, .croix {
+    width: 40px;
+/*    background-color: #555;*/
+    color: white;
+    display: flex;
+    align-items: center;  /* centre verticalement */
+    justify-content: center;  /* centre horizontalement */
+}
+
+.middle {
+    flex: 1; /* prend tout l'espace restant */
+/*    background-color: #ddd;*/
+    display: flex;
+    align-items: center;  /* centre verticalement */
+    justify-content: center;  /* centre horizontalement */
+    padding: 10px;
+    text-align: center;
+}
+
+.button-style {
+    width: 280px;
+    height: 50px;
+    background-color: #C89767;
+    color: white;
+    border: none;
+    border-radius: 16px; /* coins arrondis */
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.button-style:hover {
+    background-color: #b37a50; /* version plus foncée au survol */
+}
+
+
+
+
+/* Responsive : adaptation selon la largeur de l'écran */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    nav {
+        display: block;
+    }
+
+    nav a {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .container {
+    width: 60%;
+    }
+}
+
+@media (min-width: 769px) {
+    body {
+        font-size: 18px;
+    }
+
+    nav {
+        display: inline-block;
+    }
+}
