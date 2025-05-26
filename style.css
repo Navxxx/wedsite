@@ -66,7 +66,7 @@ main {
 }
 
 /* Animation du gradient */
-@keyframes gradienthttps://chatgpt.com/Anim {
+@keyframes gradientAnim {
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
@@ -86,6 +86,7 @@ table {
 
        th {
             font-weight: normal; /* pas de style spécial pour l'en-tête */
+            display: none;
         }
 
 h1 {
