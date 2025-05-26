@@ -45,6 +45,12 @@ a  {
     text-decoration: none;
 }
 
+a.underline {
+    color: #C89767;
+/*    margin: 0 10px;*/
+    text-decoration: underline;
+}
+
 main {
 
 }
@@ -60,14 +66,27 @@ main {
 }
 
 /* Animation du gradient */
-@keyframes gradientAnim {
+@keyframes gradienthttps://chatgpt.com/Anim {
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
 }
 
+table {
+            border-collapse: collapse; /* fusionner les bordures */
+            width: 100%; /* ou ajuster selon besoin */
+            font-size: 0.8em;
+        }
 
+        th, td {
+            border: 1px solid #376472; /* bordure noire fine */
+            padding: 8px; /* espacement interne */
+            text-align: left; /* alignement du texte */
+        }
 
+       th {
+            font-weight: normal; /* pas de style spécial pour l'en-tête */
+        }
 
 h1 {
         font-family: 'Junaretta Martalle', 'Georgia', 'Times New Roman', sans-serif;
