@@ -124,7 +124,8 @@ section#welcome p {
     display: flex;
     align-items: stretch; /* étire les divs pour que les extrémités aient la même hauteur que la div centrale */
     width: 60%;
-    margin: auto;   
+    margin: auto;
+    margin-top: 5px;   
 }
 
 
@@ -176,6 +177,9 @@ section#welcome p {
 
 
 /* Responsive : adaptation selon la largeur de l'écran */
+
+
+
 @media (max-width: 768px) {
     body {
         font-size: 16px;
@@ -190,11 +194,31 @@ section#welcome p {
         margin: 5px 0;
     }
 
-    .container {
-    width: 60%;
-    }
-}
+        .container, .container2 {
+        width: 60%;
+        }
 
+
+}
+@media (max-width: 500px) {
+
+        h1 {
+        font-weight: normal;
+        font-size: 2.8em;
+        }
+        h2 {
+        font-weight: normal;
+        font-size: 1.1em;
+        }
+        section#welcome p {
+        font-size: 1.6em;
+        }
+
+        .container, .container2 {
+        width: 80%;
+        }
+
+}
 @media (min-width: 769px) {
     body {
         font-size: 18px;
